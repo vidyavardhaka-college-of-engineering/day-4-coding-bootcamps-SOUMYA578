@@ -15,6 +15,30 @@
 int main()
 {
    //Declare all the variables[N, array a & array b, i] used in the code
+   int N , a[10] , b[10] , i;
+   printf("Enter the value of N\n");
+   scanf("%d",&N);
+   printf("Enter the array & elements\n");
+   for(i=0 ; i<N ; i++)
+   {
+     scanf("%d",&a[i]);
+   }
+   for(i=0 ; i<N ;i++)
+   {
+     b[i]=a[i];
+   }
+   printf("The elements stored in he first array A :\n");
+   for(i=0 ; i<N ;i++)
+   {
+     printf("%d\t",a[i]);
+   }
+   printf("\nThe elements stored in the second array B :\n");
+   for(i=0 ; i<N ;i++)
+   {
+     printf("%d\t",b[i]);
+   }  
+
+
    //Read the Value of N using scanf statement
    //Read the array elements using for loop and scanf statment
    //Copy the elements of array 'a'[first array] to  array 'b'[second array] using for loop
